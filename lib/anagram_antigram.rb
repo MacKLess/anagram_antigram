@@ -9,6 +9,8 @@ class WordChecker
   end
 
   def anagram?()
+    @array1 = @array1
+    @array2 = @array2
     if @array1.sort != @array2.sort
       "These words are NOT anagrams"
     else
@@ -21,9 +23,9 @@ class WordChecker
   end
 
   def create_array1()
-    input1.split("")
+    input1.downcase.split("")
   end
   def create_array2()
-    input2.split("")
+    input2.downcase.split("")
   end
 end
