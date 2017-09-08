@@ -30,6 +30,9 @@ _This application will compare two inputs and determine if they are anagrams. If
 * _Return anagrams as true despite mixed case inputs_
 * Example input: "baLms", "lAmbs"
 * Example output: "These words are anagrams"
+* _Return confirmation if anagrams are also semiordnilaps_
+* Example input: "stressed", "desserts"
+* Example output: "These words are semiordnilap (aka heteropalindromes)"
 * _Return true if inputs are actual words (contain a vowel)_
 * Example input1: "confusion"
 * Example input2: "ignorance"

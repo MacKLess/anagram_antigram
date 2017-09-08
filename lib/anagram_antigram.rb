@@ -11,10 +11,14 @@ class WordChecker
   def anagram?()
     @array1 = @array1
     @array2 = @array2
-    if @array1.sort != @array2.sort
-      "These words are NOT anagrams"
-    else
+    if @array1.sort == @array2.sort
+      if @array1.reverse == @array2
+        "These words are semiordnilap (aka heteropalindromes)!"
+      else
       "These words are anagrams"
+      end
+    else
+      "These words are NOT anagrams"
     end
     # elsif @array1.length != @array2.length
 
