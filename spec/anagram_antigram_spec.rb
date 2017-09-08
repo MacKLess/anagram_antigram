@@ -31,12 +31,16 @@ describe('#anygrams?') do
     word_test = WordChecker.new("balms", "lambs")
     expect(word_test.anagram?()).to(eq("These words are anagrams"))
   end
-  it("returns denial if inputs are not actual words (do not contain a     vowel)") do
+  it("returns denial if inputs are not actual words (do not contain a vowel)") do
     word_test = WordChecker.new("c0nf&s10n", "1gn0r4nc3")
     expect(word_test.anagram?()).to(eq("You need to input actual words!"))
   end
-  it("removes all spaces and punctuation from inputs)") do
+  it("removes all spaces and punctuation from inputs") do
     word_test = WordChecker.new("ba.lm@s", "L!. amb%s")
     expect(word_test.anagram?()).to(eq("These words are anagrams"))
+  end
+  it("returns confirmation if inputs are antigrams") do
+    word_test = WordChecker.new("fester", "anabio")
+    expect(word_test.anagram?()).to(eq("These words are antigrams!"))
   end
 end

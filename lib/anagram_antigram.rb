@@ -19,7 +19,11 @@ class WordChecker
         "These words are anagrams"
         end
       else
-        "These words are NOT anagrams"
+        if @array1.uniq.sort & @array2.uniq.sort == []
+          "These words are antigrams!"
+        else
+          "These words are NOT anagrams" 
+        end
       end
     else
       "You need to input actual words!"
