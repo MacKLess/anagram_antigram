@@ -15,20 +15,31 @@ _This application will compare two inputs and determine if they are anagrams. If
 
 ## Specifications
 
+* _Turns first string input into array_
+* Example input1: "confusion"
+* Example output: ["c","o","n","f","u","s","i","o","n"]
+* _Turns second string input into array_
+* Example input2: "ignorance"
+* Example output: ["i","g","n","o","r","a","n","c","e"]
+* _Return confirmation if inputs are anagrams_
+* Example input: "balms",  "lambs"
+* Example output: "These words are anagrams"
+* _Return denial if inputs are not anagrams_
+* Example input: "balm",  "lambs"
+* Example output: "These words are not anagrams"
 * _Return true if inputs are actual words (contain a vowel)_
-* Example input: "confusion", "ignorance"
+* Example input1: "confusion"
+* Example input2: "ignorance"
 * Example output: true
-* Example input: "c0nf*s10n", "1gn0r4nc3"
+* Example input1: ["c","0","n","f","&","s","1","0","n"]
+* Example input2: ["1","g","n","0","r","4","n","c","3"]
 * Example output: "You need to input actual words!"
 * _Return inputs in lowercase_
 * Example input: "Ruby", "Bury"
-* Example output: ruby, bury
-* _Return confirmation if inputs are anagrams_
-* Example input: "i am so lost",  "am sit solo"
-* Example output: "These words are palindromes"
+* Example output: ["r","u","b","y"], ["b","u","r","y"]
 * _Remove all spaces and punctuation_
-* Example input: "Nightmare week at 'Epicodus'", "I feel so unprepared"
-* Example output: nightmareweekatepicodus, ifeelsounprepared
+* Example input: "Depressed 'Robot'", "I am so unprepared"
+* Example output: ["d","e","p","r","e","s","s","e","d","r","o","b","o","t"], ["i","a","m","s","o","u","n","p","r","e","p","a","r","e","d"]
 * _Return confirmation if inputs are antigrams_
 * Example input: "total", "fail"
 * Example output: "These words have no letter matches and are antigrams"
