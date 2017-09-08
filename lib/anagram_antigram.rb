@@ -11,19 +11,19 @@ class WordChecker
   def anagram?()
     @array1 = @array1
     @array2 = @array2
-    if @array1.sort == @array2.sort
-      if @array1.reverse == @array2
-        "These words are semiordnilap (aka heteropalindromes)!"
+    if (@input1 =~ /[aeiouy]/i) && (@input2 =~ /[aeiouy]/i)
+      if @array1.sort == @array2.sort
+        if @array1.reverse == @array2
+          "These words are semiordnilap (aka heteropalindromes)!"
+        else
+        "These words are anagrams"
+        end
       else
-      "These words are anagrams"
+        "These words are NOT anagrams"
       end
     else
-      "These words are NOT anagrams"
+      "You need to input actual words!"
     end
-    # elsif @array1.length != @array2.length
-
-
-
   end
 
   def create_array1()

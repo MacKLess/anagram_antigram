@@ -33,10 +33,10 @@ _This application will compare two inputs and determine if they are anagrams. If
 * _Return confirmation if anagrams are also semiordnilaps_
 * Example input: "stressed", "desserts"
 * Example output: "These words are semiordnilap (aka heteropalindromes)"
-* _Return true if inputs are actual words (contain a vowel)_
-* Example input1: "confusion"
-* Example input2: "ignorance"
-* Example output: true
+* _Return confirmation if inputs are actual words (contain a vowel)_
+* Example input1: "balms"
+* Example input2: "lambs"
+* Example output: "these words are anagrams"
 * Example input1: ["c","0","n","f","&","s","1","0","n"]
 * Example input2: ["1","g","n","0","r","4","n","c","3"]
 * Example output: "You need to input actual words!"

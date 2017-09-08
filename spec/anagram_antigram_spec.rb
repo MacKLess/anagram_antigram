@@ -19,16 +19,20 @@ describe('#anygrams?') do
     word_test = WordChecker.new("balm", "lambs")
     expect(word_test.anagram?()).to(eq("These words are NOT anagrams"))
   end
-  it("Return anagrams as true despite mixed case inputs") do
+  it("return anagrams as true despite mixed case inputs") do
     word_test = WordChecker.new("baLms", "lAmbs")
     expect(word_test.anagram?()).to(eq("These words are anagrams"))
   end
-  it("Return confirmation if anagrams are also semiordnilap") do
+  it("return confirmation if anagrams are also semiordnilap") do
     word_test = WordChecker.new("stressed", "desserts")
     expect(word_test.anagram?()).to(eq("These words are semiordnilap (aka heteropalindromes)!"))
   end
-  # it("returns true if inputs are actual words (contain a vowel)") do
-  #   word_test = WordChecker.new()
-  #   expect(word_test.word_scan("confusion", "ignorance")).to(eq(true))
-  # end
+  it("returns true if inputs are actual words (contain a vowel)") do
+    word_test = WordChecker.new("balms", "lambs")
+    expect(word_test.anagram?()).to(eq("These words are anagrams"))
+  end
+  it("returns denial if inputs are not actual words (do not contain a     vowel)") do
+    word_test = WordChecker.new("c0nf&s10n", "1gn0r4nc3")
+    expect(word_test.anagram?()).to(eq("You need to input actual words!"))
+  end
 end
