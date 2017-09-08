@@ -41,8 +41,8 @@ _This application will compare two inputs and determine if they are anagrams. If
 * Example input2: ["1","g","n","0","r","4","n","c","3"]
 * Example output: "You need to input actual words!"
 * _Remove all spaces and punctuation_
-* Example input: "Depressed 'Robot'", "I am so unprepared"
-* Example output: ["d","e","p","r","e","s","s","e","d","r","o","b","o","t"], ["i","a","m","s","o","u","n","p","r","e","p","a","r","e","d"]
+* Example input: "ba.lm@s", "L!. amb%s"
+* Example output: "These words are anagrams"
 * _Return confirmation if inputs are antigrams_
 * Example input: "total", "fail"
 * Example output: "These words have no letter matches and are antigrams"

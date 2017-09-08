@@ -35,4 +35,8 @@ describe('#anygrams?') do
     word_test = WordChecker.new("c0nf&s10n", "1gn0r4nc3")
     expect(word_test.anagram?()).to(eq("You need to input actual words!"))
   end
+  it("removes all spaces and punctuation from inputs)") do
+    word_test = WordChecker.new("ba.lm@s", "L!. amb%s")
+    expect(word_test.anagram?()).to(eq("These words are anagrams"))
+  end
 end

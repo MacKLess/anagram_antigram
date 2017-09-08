@@ -27,9 +27,9 @@ class WordChecker
   end
 
   def create_array1()
-    input1.downcase.split("")
+    input1.downcase.gsub(/[^a-zA-Z]/, '').split("")
   end
   def create_array2()
-    input2.downcase.split("")
+    input2.downcase.gsub(/[^a-zA-Z]/, '').split("")
   end
 end
