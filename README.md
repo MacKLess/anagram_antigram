@@ -21,9 +21,6 @@ _This application will compare two inputs and determine if they are anagrams. If
 * _Turns second string input into array_
 * Example input2: "ignorance"
 * Example output: ["i","g","n","o","r","a","n","c","e"]
-* _Return confirmation if inputs are anagrams_
-* Example input: "balms",  "lambs"
-* Example output: "These words are anagrams"
 * _Return denial if inputs are not anagrams_
 * Example input: "balm",  "lambs"
 * Example output: "These words are not anagrams"
